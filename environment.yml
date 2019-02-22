@@ -1,0 +1,9 @@
+name: phycon-env
+
+dependencies:
+    - python
+    - scipy
+    - pytest
+    - pytest-cov
+    - flake8
+    - pylint
