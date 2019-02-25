@@ -25,7 +25,8 @@ def test__isotopic_mass():
     assert numpy.isclose(elements.isotopic_mass('cl'), 34.968852721)
 
 
-if __name__ == '__main__':
-    test__standard_case()
-    test__number()
-    test__isotopic_mass()
+def test__bonding_valence():
+    """ test elements.bonding_valence
+    """
+    assert elements.bonding_valence('CL') == 1
+    assert elements.bonding_valence('cl') == 1
