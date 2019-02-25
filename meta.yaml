@@ -1,0 +1,18 @@
+# cmd: conda build .
+package:
+    name: phycon
+    version: "0.1.0"
+
+source:
+    path: .
+
+requirements:
+    build:
+        - python
+    run:
+        - python
+        - scipy
+        - pytest
+        - pytest-cov
+        - flake8
+        - pylint
