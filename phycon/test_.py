@@ -18,6 +18,13 @@ def test__number():
     assert elements.number('cl') == 17
 
 
+def test__symbol():
+    """ test elements.symbol
+    """
+    assert elements.symbol(17) == 'Cl'
+
+
+
 def test__isotopic_mass():
     """ test elements.isotopic_mass
     """
@@ -30,3 +37,7 @@ def test__bonding_valence():
     """
     assert elements.bonding_valence('CL') == 1
     assert elements.bonding_valence('cl') == 1
+
+
+if __name__ == '__main__':
+    test__symbol()

@@ -36,6 +36,12 @@ def number(sym):
     return _SYMBOL_LST.index(sym)
 
 
+def symbol(num):
+    """ get the atomic symbols for a given atomic number
+    """
+    return _SYMBOL_LST[num]
+
+
 def isotopic_mass(sym):
     """ isotopic mass
     """
